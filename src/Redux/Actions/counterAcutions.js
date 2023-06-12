@@ -1,6 +1,6 @@
 export const increase = () => ({
-  type: "INC",
+  type: "INCREMENT",
 });
 export const decrease = () => ({
-  type: "DEC",
+  type: "DECREMENT",
 });
