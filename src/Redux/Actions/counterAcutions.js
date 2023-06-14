@@ -1,6 +1,8 @@
-export const increase = () => ({
+export const increase = (value) => ({
   type: "INCREMENT",
+  payload:value
 });
-export const decrease = () => ({
+export const decrease = (value) => ({
   type: "DECREMENT",
+  payload:value
 });

@@ -5,18 +5,17 @@ const blogReducer = (state = initialState, action) => {
     case "GET_ALL":
       return {
         ...state,
-        posts: action.payload
+        posts: action.payload,
       };
     case "GET_SINGLE":
       return {
         ...state,
-        single:[action.payload]
+        single: [action.payload],
       };
     case "CREATE_POST":
       return {
         ...state,
-        post:action.payload
-        
+        posts: [...state.posts, action.payload],
       };
 
     default:
