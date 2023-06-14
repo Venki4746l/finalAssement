@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-// import {v4 as uuid4} from "uuid";
+import {v4 as uuid4} from "uuid";
 import { createPost } from '../../Redux/Actions/blogActions';
 import './blog.css'
 const PostCreateFrom = () => {
@@ -12,8 +12,8 @@ const PostCreateFrom = () => {
       e.preventDefault()
         
         const newPost={
-            id:101,
-            userId:101,
+            id:uuid4(),
+            userId:uuid4(),
             title:title,
             body:body  
         }
